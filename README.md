@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# ufw-role
-Ansible UFW role
-=======
-## ufw
-
-[![CI](https://github.com/Oefenweb/ansible-ufw/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-ufw/actions?query=workflow%3ACI)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-ufw-blue.svg)](https://galaxy.ansible.com/Oefenweb/ufw)
+## UFW Role
 
 Set up ufw in Debian-like systems.
 
@@ -84,15 +77,4 @@ None
         protocol: udp
 ```
 
-#### License
 
-MIT
-
-#### Author Information
-
-Mischa ter Smitten (based on work of weareinteractive)
-
-#### Feedback, bug-reports, requests, ...
-
-Are [welcome](https://github.com/Oefenweb/ansible-ufw/issues)!
->>>>>>> master

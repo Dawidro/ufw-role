@@ -23,7 +23,6 @@ ufw_rules:
     to_port: 10255
     protocol: tcp
 
-
 # /etc/default/ufw
 ufw_etc_default_ipv6: true
 ufw_etc_default_default_input_policy: DROP

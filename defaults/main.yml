@@ -10,14 +10,10 @@ ufw_rules:
     interface: "{{ ansible_default_ipv4['interface'] }}"
     to_port: 22
     protocol: tcp
-
-ufw_rules:
   - rule: allow
     interface: "{{ ansible_default_ipv4['interface'] }}"
     to_port: 10251
     protocol: tcp
-
-ufw_rules:
   - rule: allow
     interface: "{{ ansible_default_ipv4['interface'] }}"
     to_port: 10255

@@ -1,4 +1,4 @@
-# defaults file
+# default
 ---
 ufw_default_incoming_policy: deny
 ufw_default_outgoing_policy: allow
@@ -12,11 +12,19 @@ ufw_rules:
     protocol: tcp
   - rule: allow
     interface: "{{ ansible_default_ipv4['interface'] }}"
+    to_port: 10250
+    protocol: tcp
+  - rule: allow
+    interface: "{{ ansible_default_ipv4['interface'] }}"
     to_port: 10251
     protocol: tcp
   - rule: allow
     interface: "{{ ansible_default_ipv4['interface'] }}"
     to_port: 10255
+    protocol: tcp
+  - rule: allow
+    interface: "{{ ansible_default_ipv4['interface'] }}"
+    to_port: 30000:32767
     protocol: tcp
 
 # /etc/default/ufw
@@ -31,3 +39,4 @@ ufw_etc_default_ipt_modules:
   - nf_conntrack_ftp
   - nf_nat_ftp
   - nf_conntrack_netbios_ns
+
